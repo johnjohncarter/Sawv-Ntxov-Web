@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-components',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./components.component.css']
 })
 export class ComponentsComponent implements OnInit {
+    is_home_page: boolean;
 
-  constructor() { }
+    constructor(private router: Router) {
+        this.is_home_page = this.checkCurrentUrl();
+        console.log(this.is_home_page);
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    checkCurrentUrl() {
+        return this.router.url === '/home';
+    }
 
 }
