@@ -17,6 +17,7 @@ import { SignUpComponent } from './components/authenticate/sign-up/sign-up.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { ShoppingCartComponent } from './components/shops/shopping-cart/shopping-cart.component';
 import { BannerAreaComponent } from './components/main-layout/banner-area/banner-area.component';
+import { HomeBannerComponent } from './components/main-layout/home-banner/home-banner.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,7 @@ import { BannerAreaComponent } from './components/main-layout/banner-area/banner
         ContactComponent,
         ShoppingCartComponent,
         BannerAreaComponent,
+        HomeBannerComponent,
     ],
     imports: [
         BrowserModule,
