@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  public inner_height: any;
   constructor() { }
 
   ngOnInit() {
+      this.inner_height = screen.height;
+      console.log(this.inner_height);
   }
 
 }
